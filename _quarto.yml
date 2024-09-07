@@ -14,7 +14,7 @@ website:
     left: ""
   
   sidebar:
-    background: "#D9E3E4"
+    background: "#00777B"
     logo: ""
     favicon: images/favicon.ico
     pinned: true
@@ -35,16 +35,6 @@ website:
         text: Introduction
       - href: content/programme.qmd
         text: Programme
-      - href: content/customizing.qmd
-        text: Information
-      - href: content/rendering.qmd
-        text: More Information
-      - href: content/rmarkdown.Rmd
-        text: Even More Information
-      - href: content/code.qmd
-        text: Presents and so on
-      - href: content/acknowledgements.qmd
-        text: Acknowledgements
 
 format:
   html:
