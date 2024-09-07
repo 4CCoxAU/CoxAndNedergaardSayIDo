@@ -1,48 +1,49 @@
 project: 
   type: website
+  output-dir: docs
 
 website: 
   page-navigation: true
-  title: "NOAA quarto simple" 
-  site-url: "https://nmfs-opensci.github.io/NOAA-quarto-simple" 
-  repo-url: "https://github.com/nmfs-opensci/NOAA-quarto-simple"
+  title: "Wedding of Christopher Martin Mikkelsen Cox and Johanne Sofie Krog Nedergård"
+  site-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/" 
+  repo-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
   page-footer:
-    right: "This page is built with [Quarto](https://quarto.org/)."
-    left: "&copy; CC-1.0"
+    right: ""
+    left: ""
   
   sidebar:
     background: "#D9E3E4"
-    logo: "https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png"
+    logo: ""
     favicon: images/favicon.ico
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://nmfs-opensci.github.io
-        text: "NMFS Open Science"
+        href: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+        text: "Sorry, just for fun"
       - icon: github
-        href: https://github.com/nmfs-opensci
-        text: "NMFS OpenSci"
+        href: https://github.com/4CCoxAU/
+        text: "Github"
 
     style: "docked"
     search: true
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Home
-      - href: content/add-content.qmd
-        text: Add content
+        text: Introduction
+      - href: content/programme.qmd
+        text: Programme
       - href: content/customizing.qmd
-        text: Customizing
+        text: Information
       - href: content/rendering.qmd
-        text: Rendering
+        text: More Information
       - href: content/rmarkdown.Rmd
-        text: R Markdown files
+        text: Even More Information
       - href: content/code.qmd
-        text: Code in your files
+        text: Presents and so on
       - href: content/acknowledgements.qmd
         text: Acknowledgements
 

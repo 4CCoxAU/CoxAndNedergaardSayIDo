@@ -1,0 +1,24 @@
+---
+title: Programme
+editor_options: 
+  chunk_output_type: console
+html-math-method: 
+  method: mathjax
+---
+## What we envision for our wedding day
+We would love for the entire experience to be great.
+
+## What will be happening on the day?
+We would love for the entire experience to be great.
+
+* Ceremony
+* We drive to Kalværksvej
+* We Party Hard
+
+## Where can we stay in Thy?
+We would recommend that you contact the following places
+
+## What about presents?
+We would like all of them, thanks. Here is a list.
+
+
