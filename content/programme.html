@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Programme – Wedding of Christopher Martin Mikkelsen Cox and Johanne Sofie Krog Nedergård</title>
+<title>Wedding of Christopher Martin Mikkelsen Cox and Johanne Sofie Krog Nedergård - Programme</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,13 +80,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/programme.html">Programme</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -196,24 +196,30 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="what-we-envision-for-our-wedding-day" class="level2">
 <h2 class="anchored" data-anchor-id="what-we-envision-for-our-wedding-day">What we envision for our wedding day</h2>
-<p>We would love for the entire experience to be great.</p>
+<p>We want our wedding day to be filled with love, laughter, and unforgettable moments. From the moment you arrive to the final dance, we hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Most of all, we just want everyone to have a fantastic time celebrating this special chapter in our lives!</p>
 </section>
 <section id="what-will-be-happening-on-the-day" class="level2">
 <h2 class="anchored" data-anchor-id="what-will-be-happening-on-the-day">What will be happening on the day?</h2>
-<p>We would love for the entire experience to be great.</p>
+<p>We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:</p>
 <ul>
-<li>Ceremony</li>
-<li>We drive to Kalværksvej</li>
-<li>We Party Hard</li>
+<li>Ceremony – Where we say “I do” and try not to cry too much.</li>
+<li>We drive to Kalværksvej – A fun 4-minute road trip to our next destination.</li>
+<li>We Party Hard – You know what this means. Bring your best dance moves and let’s make this a night to remember!</li>
 </ul>
 </section>
 <section id="where-can-we-stay-in-thy" class="level2">
 <h2 class="anchored" data-anchor-id="where-can-we-stay-in-thy">Where can we stay in Thy?</h2>
-<p>We would recommend that you contact the following places</p>
+<p>Thy is filled with lovely places to stay, and we’ve gathered a few recommendations just for you! Here are some cozy spots we think you’ll love:</p>
+<ul>
+<li>[Hotel Thy Comfort Inn] – For a comfortable stay right in the heart of the action.</li>
+<li>[Pine Tree Lodge] – Perfect if you love a bit of nature and serenity.</li>
+<li>[The Cozy Cabin] – A cute and charming spot for those who want a peaceful retreat.</li>
+</ul>
+<p>Feel free to reach out to them directly to book your stay!</p>
 </section>
 <section id="what-about-presents" class="level2">
 <h2 class="anchored" data-anchor-id="what-about-presents">What about presents?</h2>
-<p>We would like all of them, thanks. Here is a list.</p>
+<p>Honestly, we’re just so happy to have you with us to celebrate! But if you insist… we won’t say no to presents. 😄 We’ve put together a little list of things we’d love (or, you know, need) as we start this next adventure together: LINK TO WEBSITE! Here’s our wish list, and yes, we’ll gladly accept all of them, thank you very much!</p>
 
 
 </section>
@@ -398,7 +404,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -430,29 +447,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("https:\/\/4ccoxau\.github\.io\/CoxAndNedergaardSayIDo\/");
@@ -460,7 +455,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
