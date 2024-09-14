@@ -6,43 +6,21 @@ website:
   title: "Wedding of Christopher Martin Mikkelsen Cox and Johanne Sofie Krog Nedergård"
   site-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/" 
   repo-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/"
-  repo-actions: [edit, source, issue]
+  repo-actions: none
   favicon: images/favicon.png
   
   page-footer:
     right: ""
     left: ""
-  
-  sidebar:
-    background: "#00777B"
-    logo: ""
-    favicon: images/favicon.ico
-    pinned: true
-    align: center
-    tools: 
-      - icon: globe
-        href: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-        text: "Sorry, just for fun"
-      - icon: github
-        href: https://github.com/4CCoxAU/
-        text: "Github"
-
-    style: "docked"
-    search: true
-    collapse-level: 1
-    contents:
-      - href: index.qmd
-        text: Introduction
 
 format:
   html:
     theme:
-      light: [cosmo, theme.scss] 
-      dark: [cosmo, theme-dark.scss]
+      light: [lux, theme.scss] 
+      dark: [lux, theme-dark.scss]
     code-copy: true
     code-overflow: wrap
     toc: true
-
 
 filters:
   - include-files.lua

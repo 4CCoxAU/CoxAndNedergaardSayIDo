@@ -1,9 +1,9 @@
 ---
-title: "How It All Started"
-subtitle: "A Love Story "
+title: "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox"
+subtitle: "Practical Information"
 page-layout: full
-title-block-banner: "#f0f3f5"
-title-block-banner-color: "black"
+title-block-banner: "#00777B"
+title-block-banner-color: "white"
 ---
 
 It all started with a chance encounter on a breezy autumn afternoon. Chris, ever the gentleman, was juggling a coffee in one hand and an armful of books in the other, when out of nowhere – bam – he bumped right into Johanne. Coffee flew, books tumbled, and fate, as they say, was sealed.
