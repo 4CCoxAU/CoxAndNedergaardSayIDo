@@ -4,6 +4,8 @@ editor_options:
   chunk_output_type: console
 html-math-method: 
   method: mathjax
+title-block-banner: "#f0f3f5"
+title-block-banner-color: "black"
 ---
 ## What we envision for our wedding day
 We want our wedding day to be filled with love, laughter, and unforgettable moments. From the moment you arrive to the final dance, we hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Most of all, we just want everyone to have a fantastic time celebrating this special chapter in our lives!
@@ -32,10 +34,3 @@ Wear hats and suits, baby!
 
 ## Here is a link to the RSVP
 Please answer as soon as possible.
-
-
-
-
-
-
-

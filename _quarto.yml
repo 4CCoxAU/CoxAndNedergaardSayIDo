@@ -7,7 +7,7 @@ website:
   site-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/" 
   repo-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/"
   repo-actions: [edit, source, issue]
-  favicon: images/favicon.ico
+  favicon: images/favicon.png
   
   page-footer:
     right: ""
@@ -33,8 +33,6 @@ website:
     contents:
       - href: index.qmd
         text: Introduction
-      - href: content/programme.qmd
-        text: Programme
 
 format:
   html:
