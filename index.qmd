@@ -1,6 +1,6 @@
 ---
 title: "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox"
-subtitle: "Practical Information"
+subtitle: ""
 page-layout: full
 title-block-banner: "#00777B"
 title-block-banner-color: "white"
