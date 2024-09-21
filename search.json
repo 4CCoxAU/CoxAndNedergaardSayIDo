@@ -1,178 +1,52 @@
 [
   {
-    "objectID": "content/acknowledgements.html",
-    "href": "content/acknowledgements.html",
-    "title": "Acknowledgments",
-    "section": "",
-    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
-  },
-  {
-    "objectID": "content/customizing.html",
-    "href": "content/customizing.html",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#quarto-documentation",
-    "href": "content/customizing.html#quarto-documentation",
-    "title": "Customization",
-    "section": "",
-    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
-  },
-  {
-    "objectID": "content/customizing.html#examples",
-    "href": "content/customizing.html#examples",
-    "title": "Customization",
-    "section": "Examples",
-    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
-  },
-  {
-    "objectID": "content/publishing.html",
-    "href": "content/publishing.html",
-    "title": "Publishing",
-    "section": "",
-    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
-  },
-  {
-    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
-    "title": "Publishing",
-    "section": "Turn on GitHub Pages for your repo",
-    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
-  },
-  {
-    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
-    "title": "Publishing",
-    "section": "Do your first publish to gh-pages",
-    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
-  },
-  {
-    "objectID": "content/publishing.html#dont-like-using-gh-pages",
-    "href": "content/publishing.html#dont-like-using-gh-pages",
-    "title": "Publishing",
-    "section": "Don’t like using gh-pages?",
-    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
-  },
-  {
-    "objectID": "content/rendering.html",
-    "href": "content/rendering.html",
-    "title": "Rendering",
-    "section": "",
-    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
-  },
-  {
-    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
-    "title": "Rendering",
-    "section": "Step 1. Make sure you have a recent RStudio",
-    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
-  },
-  {
-    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
-    "title": "Rendering",
-    "section": "Step 2. Clone and create RStudio project",
-    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
-  },
-  {
-    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
-    "href": "content/rendering.html#step-3.-render-within-rstudio",
-    "title": "Rendering",
-    "section": "Step 3. Render within RStudio",
-    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
-    "section": "",
-    "text": "It all started with a chance encounter on a breezy autumn afternoon. Chris, ever the gentleman, was juggling a coffee in one hand and an armful of books in the other, when out of nowhere – bam – he bumped right into Johanne. Coffee flew, books tumbled, and fate, as they say, was sealed.\nFrom that moment on, Chris knew Johanne was someone special. He was captivated by her sparkling eyes, infectious laugh, and the way she smiled even when his clumsiness was on full display. Johanne, meanwhile, couldn’t help but be charmed by Chris’s awkwardly adorable attempts to make up for the spilled coffee – which led to their first official date.\nThat date turned into many more, filled with laughter, adventures, and long conversations about everything from dreams to pizza toppings (they still debate the merits of pineapple!). Together, they discovered their love for spontaneous road trips, late-night dance parties in the kitchen, and binge-watching terrible rom-coms.\nAfter countless memories made and love only growing stronger, Chris decided to pop the question in the most Chris way possible: while attempting (and failing) to cook Johanne’s favorite meal. She said yes between bites of slightly burnt pasta, and the rest, as they say, is history.\nNow, we invite you to join us in celebrating the next chapter of our love story as we say “I do” and begin our forever adventure together."
+    "objectID": "index.html#our-love-story",
+    "href": "index.html#our-love-story",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Our Love Story",
+    "text": "Our Love Story\nIt all started with a chance encounter on a breezy autumn afternoon. Chris, ever the gentleman, was juggling a coffee in one hand and an armful of books in the other, when out of nowhere – bam – he bumped right into Johanne. Coffee flew, books tumbled, and fate, as they say, was sealed.\nFrom that moment on, Chris knew Johanne was someone special. He was captivated by her sparkling eyes, infectious laugh, and the way she smiled even when his clumsiness was on full display. Johanne, meanwhile, couldn’t help but be charmed by Chris’s awkwardly adorable attempts to make up for the spilled coffee – which led to their first official date.\nThat date turned into many more, filled with laughter, adventures, and long conversations about everything from dreams to pizza toppings (they still debate the merits of pineapple!). Together, they discovered their love for spontaneous road trips, late-night dance parties in the kitchen, and binge-watching terrible rom-coms.\nAfter countless memories made and love only growing stronger, Chris decided to pop the question in the most Chris way possible: while attempting (and failing) to cook Johanne’s favorite meal. She said yes between bites of slightly burnt pasta, and the rest, as they say, is history.\nNow, we invite you to join us in celebrating the next chapter of our love story as we say “I do” and begin our forever adventure together."
   },
   {
     "objectID": "index.html#what-we-envision-for-our-wedding-day",
     "href": "index.html#what-we-envision-for-our-wedding-day",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "What we envision for our wedding day",
     "text": "What we envision for our wedding day\nWe want our wedding day to be filled with love, laughter, and unforgettable moments. From the moment you arrive to the final dance, we hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Most of all, we just want everyone to have a fantastic time celebrating this special chapter in our lives!"
   },
   {
     "objectID": "index.html#what-will-be-happening-on-the-day",
     "href": "index.html#what-will-be-happening-on-the-day",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "What will be happening on the day?",
-    "text": "What will be happening on the day?\nWe’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:\n\nCeremony – Where we say “I do” and try not to cry too much.\nWe drive to Kalværksvej – A fun 4-minute road trip to our next destination.\nWe Party Hard – You know what this means. Bring your best dance moves and let’s make this a night to remember!"
+    "text": "What will be happening on the day?\nWe’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:\n\nCeremony – Where we say “I do” and try not to cry too much.\n\n\n\n\n\n\n\n\nWe drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination.\n\n\n\n\n\n\n\n\nWe Party Hard – You know what this means. Bring your best dance moves and let’s make this a night to remember!"
   },
   {
     "objectID": "index.html#where-can-we-stay-in-thy",
     "href": "index.html#where-can-we-stay-in-thy",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "Where can we stay in Thy?",
     "text": "Where can we stay in Thy?\nThy is filled with lovely places to stay, and we’ve gathered a few recommendations just for you! Here are some cozy spots we think you’ll love:\n\n[Hotel Thy Comfort Inn] – For a comfortable stay right in the heart of the action.\n[Pine Tree Lodge] – Perfect if you love a bit of nature and serenity.\n[The Cozy Cabin] – A cute and charming spot for those who want a peaceful retreat.\n\nFeel free to reach out to them directly to book your stay!"
   },
   {
     "objectID": "index.html#what-about-presents",
     "href": "index.html#what-about-presents",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "What about presents?",
     "text": "What about presents?\nHonestly, we’re just so happy to have you with us to celebrate! But if you insist… we won’t say no to presents. 😄 We’ve put together a little list of things we’d love (or, you know, need) as we start this next adventure together: LINK TO WEBSITE! Here’s our wish list, and yes, we’ll gladly accept all of them, thank you very much!"
   },
   {
     "objectID": "index.html#dresscode",
     "href": "index.html#dresscode",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "Dresscode",
     "text": "Dresscode\nWear hats and suits, baby!"
   },
   {
     "objectID": "index.html#here-is-a-link-to-the-rsvp",
     "href": "index.html#here-is-a-link-to-the-rsvp",
-    "title": "The Wedding of Johanne Sofie Krog Nedergaard & Christopher Martin Mikkelsen Cox",
+    "title": "\nWedding of  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
     "section": "Here is a link to the RSVP",
     "text": "Here is a link to the RSVP\nPlease answer as soon as possible."
-  },
-  {
-    "objectID": "content/rmarkdown.html",
-    "href": "content/rmarkdown.html",
-    "title": "R Markdown",
-    "section": "",
-    "text": "You can include R Markdown files in your project."
-  },
-  {
-    "objectID": "content/rmarkdown.html#r-markdown",
-    "href": "content/rmarkdown.html#r-markdown",
-    "title": "R Markdown",
-    "section": "R Markdown",
-    "text": "R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
-  },
-  {
-    "objectID": "content/rmarkdown.html#including-plots",
-    "href": "content/rmarkdown.html#including-plots",
-    "title": "R Markdown",
-    "section": "Including Plots",
-    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
-  },
-  {
-    "objectID": "content/code.html",
-    "href": "content/code.html",
-    "title": "Rendering with Code",
-    "section": "",
-    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326"
-  },
-  {
-    "objectID": "content/code.html#modify-the-github-action",
-    "href": "content/code.html#modify-the-github-action",
-    "title": "Rendering with Code",
-    "section": "Modify the GitHub Action",
-    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it."
-  },
-  {
-    "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
-    "title": "Rendering with Code",
-    "section": "Render locally and publish to gh-pages branch",
-    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages"
   },
   {
     "objectID": "content/programme.html",
@@ -222,5 +96,166 @@
     "title": "Programme",
     "section": "Here is a link to the RSVP",
     "text": "Here is a link to the RSVP\nPlease answer as soon as possible."
+  },
+  {
+    "objectID": "content/acknowledgements.html",
+    "href": "content/acknowledgements.html",
+    "title": "Acknowledgments",
+    "section": "",
+    "text": "This repo and GitHub Action was based on the tutorial by Openscapes quarto-website-tutorial by Julia Lowndes and Stefanie Butland."
+  },
+  {
+    "objectID": "content/rendering.html",
+    "href": "content/rendering.html",
+    "title": "Rendering",
+    "section": "",
+    "text": "The repo includes a GitHub Action that will render (build) the website automatically when you make changes to the files. It will be pushed to the gh-pages branch.\nBut when you are developing your content, you will want to render it locally."
+  },
+  {
+    "objectID": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "href": "content/rendering.html#step-1.-make-sure-you-have-a-recent-rstudio",
+    "title": "Rendering",
+    "section": "Step 1. Make sure you have a recent RStudio",
+    "text": "Step 1. Make sure you have a recent RStudio\nHave you updated RStudio since about August 2022? No? Then update to a newer version of RStudio. In general, you want to keep RStudio updated and it is required to have a recent version to use Quarto."
+  },
+  {
+    "objectID": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "href": "content/rendering.html#step-2.-clone-and-create-rstudio-project",
+    "title": "Rendering",
+    "section": "Step 2. Clone and create RStudio project",
+    "text": "Step 2. Clone and create RStudio project\nFirst, clone the repo onto your local computer. How? You can click File &gt; New Project and then select “Version Control”. Paste in the url of the repository. That will clone the repo on to your local computer. When you make changes, you will need to push those up."
+  },
+  {
+    "objectID": "content/rendering.html#step-3.-render-within-rstudio",
+    "href": "content/rendering.html#step-3.-render-within-rstudio",
+    "title": "Rendering",
+    "section": "Step 3. Render within RStudio",
+    "text": "Step 3. Render within RStudio\nRStudio will recognize that this is a Quarto project by the presence of the _quarto.yml file and will see the “Build” tab. Click the “Render website” button to render to the _site folder.\nPreviewing: You can either click index.html in the _site folder and specify “preview in browser” or set up RStudio to preview to the viewer panel. To do the latter, go to Tools &gt; Global Options &gt; R Markdown. Then select “Show output preview in: Viewer panel”."
+  },
+  {
+    "objectID": "index_da.html#vores-kærlighedshistorie",
+    "href": "index_da.html#vores-kærlighedshistorie",
+    "title": "\nBryllup mellem  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Vores Kærlighedshistorie",
+    "text": "Vores Kærlighedshistorie\nDet hele startede med et tilfældigt møde en blæsende eftermiddag om efteråret. Chris, altid en gentleman, havde en kaffe i den ene hånd og en stak bøger i den anden, da han pludselig – bam – stødte lige ind i Johanne. Kaffen fløj, bøgerne væltede, og skæbnen, som man siger, var beseglet.\nFra det øjeblik vidste Chris, at Johanne var noget helt særligt. Han blev betaget af hendes glimtende øjne, smittende latter og den måde, hun smilede på, selv når hans klodsethed var tydelig. Johanne kunne heller ikke undgå at blive charmeret af Chris’ akavede, men søde forsøg på at gøre det godt igen efter den spildte kaffe – og det førte til deres første officielle date.\nDen date blev til mange flere, fyldt med latter, eventyr og lange samtaler om alt fra drømme til pizzafyld (de diskuterer stadig fordelene ved ananas!). Sammen opdagede de deres kærlighed til spontane roadtrips, natlige dansefester i køkkenet og maratonvisninger af dårlige romantiske komedier.\nEfter utallige minder og en kærlighed, der kun blev stærkere, besluttede Chris at fri på den mest Chris-agtige måde: mens han forsøgte (og fejlede) at lave Johannes livret. Hun sagde ja mellem bidder af let brændt pasta, og resten, som man siger, er historie.\nNu inviterer vi jer til at fejre det næste kapitel i vores kærlighedshistorie, når vi siger “ja” og begynder vores evige eventyr sammen. Hvad vi forestiller os for vores bryllupsdag\nVi ønsker, at vores bryllupsdag skal være fyldt med kærlighed, latter og uforglemmelige øjeblikke. Fra det øjeblik, I ankommer, til den sidste dans, håber vi, at I vil mærke den glæde og spænding, vi føler. Forvent masser af sjov, lækker mad og et dansegulv, der vil være fyldt langt ud på natten. Mest af alt ønsker vi bare, at alle har en fantastisk tid med at fejre dette særlige kapitel i vores liv! Hvad skal der ske på dagen?\nVi har en dag pakket med kærlighed og fest, og vi glæder os så meget til at dele den med jer! Her er, hvad I kan forvente:\n\nCeremoni – Hvor vi siger “ja” og prøver at lade være med at græde for meget.\n\n\n\n\n\n\n\n\nVi kører til Kalkværksvej 20 – En sjov 4-minutters roadtrip til vores næste destination.\n\n\n\n\n\n\n\n\nVi fester igennem – Du ved, hvad det betyder. Tag dine bedste dansetrin med, og lad os gøre denne aften uforglemmelig!"
+  },
+  {
+    "objectID": "index_da.html#hvor-kan-vi-overnatte-i-thy",
+    "href": "index_da.html#hvor-kan-vi-overnatte-i-thy",
+    "title": "\nBryllup mellem  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Hvor kan vi overnatte i Thy?",
+    "text": "Hvor kan vi overnatte i Thy?\nThy er fyldt med dejlige steder at overnatte, og vi har samlet nogle anbefalinger til jer! Her er nogle hyggelige steder, vi tror, I vil elske:\n\n[Hotel Thy Comfort Inn] – For et komfortabelt ophold lige midt i begivenhedernes centrum.\n[Pine Tree Lodge] – Perfekt, hvis du elsker lidt natur og ro.\n[The Cozy Cabin] – Et sødt og charmerende sted for dem, der ønsker en fredfyldt oase.\n\nKontakt dem gerne direkte for at booke jeres ophold!"
+  },
+  {
+    "objectID": "index_da.html#hvad-med-gaver",
+    "href": "index_da.html#hvad-med-gaver",
+    "title": "\nBryllup mellem  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Hvad med gaver?",
+    "text": "Hvad med gaver?\nÆrligt talt er vi bare så glade for at have jer med til at fejre! Men hvis I insisterer… vi siger ikke nej til gaver. 😄 Vi har lavet en lille liste med ting, vi ville elske (eller, du ved, har brug for) til vores næste eventyr sammen: LINK TIL WEBSITE! Her er vores ønskeliste, og ja, vi tager gladeligt imod dem alle, tak!"
+  },
+  {
+    "objectID": "index_da.html#dresscode",
+    "href": "index_da.html#dresscode",
+    "title": "\nBryllup mellem  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Dresscode",
+    "text": "Dresscode\nTag hatte og jakkesæt på, baby!"
+  },
+  {
+    "objectID": "index_da.html#her-er-et-link-til-rsvp",
+    "href": "index_da.html#her-er-et-link-til-rsvp",
+    "title": "\nBryllup mellem  Christopher Martin Mikkelsen Cox  &  Johanne Sofie Krog Nedergård\n",
+    "section": "Her er et link til RSVP",
+    "text": "Her er et link til RSVP\nSvar venligst så hurtigt som muligt."
+  },
+  {
+    "objectID": "content/publishing.html",
+    "href": "content/publishing.html",
+    "title": "Publishing",
+    "section": "",
+    "text": "To get your Quarto webpage to show up with the url\nyou have a few steps."
+  },
+  {
+    "objectID": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "href": "content/publishing.html#turn-on-github-pages-for-your-repo",
+    "title": "Publishing",
+    "section": "Turn on GitHub Pages for your repo",
+    "text": "Turn on GitHub Pages for your repo\n\nTurn on GitHub Pages under Settings &gt; Pages . You will set pages to be made from the gh-pages branch and the root directory.\nTurn on GitHub Actions under Settings &gt; Actions &gt; General\n\nThe GitHub Action will automatically recreate your website when you push to GitHub after you do the initial gh-pages set-up"
+  },
+  {
+    "objectID": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "href": "content/publishing.html#do-your-first-publish-to-gh-pages",
+    "title": "Publishing",
+    "section": "Do your first publish to gh-pages",
+    "text": "Do your first publish to gh-pages\nThe first time you publish to gh-pages, you need to do so locally.\n\nOn your local computer, open a terminal window and cd to your repo directory. Here is what that cd command looks like for me. You command will look different because your local repo will be somewhere else on your computer.\n\ncd ~/Documents/GitHub/NOAA-quarto-simple\n\nPublish to the gh-pages. In the terminal type\n\nquarto publish gh-pages\nThis is going to render your webpage and then push the _site contents to the gh-pages branch."
+  },
+  {
+    "objectID": "content/publishing.html#dont-like-using-gh-pages",
+    "href": "content/publishing.html#dont-like-using-gh-pages",
+    "title": "Publishing",
+    "section": "Don’t like using gh-pages?",
+    "text": "Don’t like using gh-pages?\nIn some cases, you don’t want your website on the gh-pages branch. For example, if you are creating releases and you want the website pages archived in that release, then you won’t want your website pages on the gh-pages branch.\nHere are the changes you need to make if you to avoid gh-pages branch.\n\nAt the top of _quarto.yml add the following:\n\nproject: \n  type: website\n  output-dir: docs\n\nOn GitHub under Settings &gt; Pages set pages to be made from the main branch and the docs directory.\nMake sure docs is not listed in .gitignore\nPublish the site the first time locally using quarto publish from the terminal\nChange the GitHub Action because you can’t use quarto publish gh-pages. You’ll need to push to the main branch yourself (in the GitHub Action)\n\non:\n  push:\n    branches: main\n\nname: Render and Publish\n\njobs:\n  build-deploy:\n    runs-on: ubuntu-latest\n    env:\n      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}\n\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v2 \n        \n      - name: Set up R (needed for Rmd)\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Install packages (needed for Rmd)\n        run: Rscript -e 'install.packages(c(\"rmarkdown\", \"knitr\", \"jsonlite\"))'\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n        with:\n          # To install LaTeX to build PDF book \n          # tinytex: true \n          # uncomment below and fill to pin a version\n          # version: 0.9.600\n      \n      - name: Render Quarto Project\n        uses: quarto-dev/quarto-actions/render@v2\n        with:\n          to: html\n\n      - name: Set up Git\n        run: |\n          git config --local user.email \"actions@github.com\"\n          git config --local user.name \"GitHub Actions\"\n\n      - name: Commit all changes and push\n        run: |\n          git add -A && git commit -m 'Build site' || echo \"No changes to commit\"\n          git push origin || echo \"No changes to commit\""
+  },
+  {
+    "objectID": "content/code.html",
+    "href": "content/code.html",
+    "title": "Rendering with Code",
+    "section": "",
+    "text": "You can have code (R, Python or Julia) in your qmd file. You will need to have these installed on your local computer, but presumably you do already if you are adding code to your qmd files.\nx &lt;- c(5, 15, 25, 35, 45, 55)\ny &lt;- c(5, 20, 14, 32, 22, 38)\nlm(x ~ y)\n\n\nCall:\nlm(formula = x ~ y)\n\nCoefficients:\n(Intercept)            y  \n      1.056        1.326"
+  },
+  {
+    "objectID": "content/code.html#modify-the-github-action",
+    "href": "content/code.html#modify-the-github-action",
+    "title": "Rendering with Code",
+    "section": "Modify the GitHub Action",
+    "text": "Modify the GitHub Action\nYou will need to change the GitHub Action in .github/workflows to install these and any needed packages in order for GitHub to be able to render your webpage. The GitHub Action install R since I used that in code.qmd. If you use Python or Julia instead, then you will need to update the GitHub Action to install those.\nIf getting the GitHub Action to work is too much hassle (and that definitely happens), you can alway render locally and publish to the gh-pages branch. If you do this, make sure to delete or rename the GitHub Action to something like\nrender-and-publish.old_yml\nso GitHub does not keep trying to run it. Nothing bad will happen if you don’t do this, but if you are not using the action (because it keeps failing), then you don’t need GitHub to run it."
+  },
+  {
+    "objectID": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "href": "content/code.html#render-locally-and-publish-to-gh-pages-branch",
+    "title": "Rendering with Code",
+    "section": "Render locally and publish to gh-pages branch",
+    "text": "Render locally and publish to gh-pages branch\nTo render locally and push up to the gh-pages branch, open a terminal window and then cd to the directory with the Quarto project. Type this in the terminal:\nquarto render gh-pages"
+  },
+  {
+    "objectID": "content/rmarkdown.html",
+    "href": "content/rmarkdown.html",
+    "title": "R Markdown",
+    "section": "",
+    "text": "You can include R Markdown files in your project."
+  },
+  {
+    "objectID": "content/rmarkdown.html#r-markdown",
+    "href": "content/rmarkdown.html#r-markdown",
+    "title": "R Markdown",
+    "section": "R Markdown",
+    "text": "R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "content/rmarkdown.html#including-plots",
+    "href": "content/rmarkdown.html#including-plots",
+    "title": "R Markdown",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "content/customizing.html",
+    "href": "content/customizing.html",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#quarto-documentation",
+    "href": "content/customizing.html#quarto-documentation",
+    "title": "Customization",
+    "section": "",
+    "text": "Quarto allow many bells and whistles to make nice output. Read the documentation here Quarto documentation."
+  },
+  {
+    "objectID": "content/customizing.html#examples",
+    "href": "content/customizing.html#examples",
+    "title": "Customization",
+    "section": "Examples",
+    "text": "Examples\nLooking at other people’s Quarto code is a great way to figure out how to do stuff. Most will have a link to a GitHub repo where you can see the raw code. Look for a link to edit page or see source code. This will usually be on the right. Or look for the GitHub icon somewhere.\n\nQuarto gallery\nnmfs-openscapes\nFaye lab manual\nquarto-titlepages Note the link to edit is broken. Go to repo and look in documentation directory."
   }
 ]
