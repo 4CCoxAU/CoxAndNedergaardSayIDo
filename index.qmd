@@ -46,7 +46,7 @@ We’ve got a day packed with love and celebration, and we’re so excited to sh
 ```{r, echo = FALSE}
 leaflet() %>%
   addTiles() %>%
-  addMarkers(lng = 8.445515, lat = 56.899314, popup = "Nørhå Chruch")
+  addMarkers(lng = 8.445515, lat = 56.899314, popup = "Nørhå Church")
 ```
 
 * We drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination.

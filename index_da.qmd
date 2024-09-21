@@ -45,7 +45,7 @@ Vi har en dag pakket med kærlighed og fest, og vi glæder os så meget til at d
 ```{r, echo = FALSE}
 leaflet() %>%
   addTiles() %>%
-  addMarkers(lng = 8.354937553405762, lat = 56.92267608642578, popup = "Stenbjerg Kirke")
+  addMarkers(lng = 8.445515, lat = 56.899314, popup = "Nørhå Kirke")
 ```
 
 
@@ -53,7 +53,7 @@ leaflet() %>%
 ```{r, echo = FALSE}
 leaflet() %>%
   addTiles() %>%
-  addMarkers(lng = 8.402077674865723, lat = 56.89632034301758, popup = "Lærkely (Johannes mors hjem)")
+  addMarkers(lng = 8.396672, lat = 56.898276, popup = "Lærkely (Johannes Mors Hjem)")
 ```
 
 * Vi fester igennem – Du ved, hvad det betyder. Tag dine bedste dansetrin med, og lad os gøre denne aften uforglemmelig!
