@@ -1,0 +1,81 @@
+---
+css: styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+#install.packages('leaflet')
+library('leaflet')
+```
+
+<div class="title-block-banner">
+  <h1>Bryllup mellem <br> <b>Christopher Martin Mikkelsen Cox</b> <br> & <br> <b>Johanne Sofie Krog Nedergård</b></h1>
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="window.location.href='index.html'" style="background-color: white; color: #00777B; padding: 10px 20px; border: 2px solid #00777B; border-radius: 5px; font-size: 1.2em; margin-right: 10px;">
+    English
+  </button>
+  <button onclick="window.location.href='index_da.html'" style="background-color: #00777B; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1.2em;">
+    Dansk
+  </button>
+</div>
+
+<div class="parallax-container"><div class="parallax-image-container"></div></div>
+
+## Vores Kærlighedshistorie 
+Det hele startede med et tilfældigt møde en blæsende eftermiddag om efteråret. Chris, altid en gentleman, havde en kaffe i den ene hånd og en stak bøger i den anden, da han pludselig – bam – stødte lige ind i Johanne. Kaffen fløj, bøgerne væltede, og skæbnen, som man siger, var beseglet.
+
+Fra det øjeblik vidste Chris, at Johanne var noget helt særligt. Han blev betaget af hendes glimtende øjne, smittende latter og den måde, hun smilede på, selv når hans klodsethed var tydelig. Johanne kunne heller ikke undgå at blive charmeret af Chris' akavede, men søde forsøg på at gøre det godt igen efter den spildte kaffe – og det førte til deres første officielle date.
+
+Den date blev til mange flere, fyldt med latter, eventyr og lange samtaler om alt fra drømme til pizzafyld (de diskuterer stadig fordelene ved ananas!). Sammen opdagede de deres kærlighed til spontane roadtrips, natlige dansefester i køkkenet og maratonvisninger af dårlige romantiske komedier.
+
+Efter utallige minder og en kærlighed, der kun blev stærkere, besluttede Chris at fri på den mest Chris-agtige måde: mens han forsøgte (og fejlede) at lave Johannes livret. Hun sagde ja mellem bidder af let brændt pasta, og resten, som man siger, er historie.
+
+Nu inviterer vi jer til at fejre det næste kapitel i vores kærlighedshistorie, når vi siger "ja" og begynder vores evige eventyr sammen.
+Hvad vi forestiller os for vores bryllupsdag
+
+Vi ønsker, at vores bryllupsdag skal være fyldt med kærlighed, latter og uforglemmelige øjeblikke. Fra det øjeblik, I ankommer, til den sidste dans, håber vi, at I vil mærke den glæde og spænding, vi føler. Forvent masser af sjov, lækker mad og et dansegulv, der vil være fyldt langt ud på natten. Mest af alt ønsker vi bare, at alle har en fantastisk tid med at fejre dette særlige kapitel i vores liv!
+Hvad skal der ske på dagen?
+
+Vi har en dag pakket med kærlighed og fest, og vi glæder os så meget til at dele den med jer! Her er, hvad I kan forvente:
+
+* Ceremoni – Hvor vi siger "ja" og prøver at lade være med at græde for meget.
+```{r, echo = FALSE}
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 8.354937553405762, lat = 56.92267608642578, popup = "Stenbjerg Kirke")
+```
+
+
+* Vi kører til Kalkværksvej 20 – En sjov 4-minutters roadtrip til vores næste destination.
+```{r, echo = FALSE}
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng = 8.402077674865723, lat = 56.89632034301758, popup = "Lærkely (Johannes mors hjem)")
+```
+
+* Vi fester igennem – Du ved, hvad det betyder. Tag dine bedste dansetrin med, og lad os gøre denne aften uforglemmelig!
+
+## Hvor kan vi overnatte i Thy?
+
+Thy er fyldt med dejlige steder at overnatte, og vi har samlet nogle anbefalinger til jer! Her er nogle hyggelige steder, vi tror, I vil elske:
+
+* [Hotel Thy Comfort Inn] – For et komfortabelt ophold lige midt i begivenhedernes centrum.
+* [Pine Tree Lodge] – Perfekt, hvis du elsker lidt natur og ro.
+* [The Cozy Cabin] – Et sødt og charmerende sted for dem, der ønsker en fredfyldt oase.
+
+Kontakt dem gerne direkte for at booke jeres ophold!
+
+## Hvad med gaver?
+
+Ærligt talt er vi bare så glade for at have jer med til at fejre! Men hvis I insisterer… vi siger ikke nej til gaver. 😄 Vi har lavet en lille liste med ting, vi ville elske (eller, du ved, har brug for) til vores næste eventyr sammen: LINK TIL WEBSITE! Her er vores ønskeliste, og ja, vi tager gladeligt imod dem alle, tak!
+
+## Dresscode
+
+Tag hatte og jakkesæt på, baby!
+
+## Her er et link til RSVP
+
+Svar venligst så hurtigt som muligt.

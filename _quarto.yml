@@ -1,23 +1,12 @@
 project: 
   type: website
 
-website: 
-  page-navigation: true
+website:
   title: "Wedding of Christopher Martin Mikkelsen Cox and Johanne Sofie Krog Nedergård"
-  site-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/" 
-  repo-url: "https://4ccoxau.github.io/CoxAndNedergaardSayIDo/"
-  repo-actions: none
-  favicon: images/favicon.png
-  
-  page-footer:
-    right: ""
-    left: ""
 
 format:
   html:
-    theme:
-      light: [lux, theme.scss] 
-      dark: [lux, theme-dark.scss]
+    theme: [lux, theme.scss]
     code-copy: true
     code-overflow: wrap
     toc: true
