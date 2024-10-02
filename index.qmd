@@ -10,7 +10,11 @@ library('leaflet')
 ```
 
 <div class="title-block-banner">
-  <h1>Wedding of <br> Christopher Martin Mikkelsen Cox <br> & <br> Johanne Sofie Krog Nedergård</h1>
+  <h1>
+    Wedding of <br> Christopher Martin Mikkelsen Cox<br>
+            <span class="ampersand">&amp;</span> 
+                <br> Johanne Sofie Krog Nedergård
+        </h1>
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
@@ -36,8 +40,13 @@ After countless memories made and love only growing stronger, Chris decided to p
 
 Now, we invite you to join us in celebrating the next chapter of our love story as we say "I do" and begin our forever adventure together.
 
+<div class="parallax-container"><div class="parallax-image-container-2"></div></div>
+
 ## What we envision for our wedding day
 We want our wedding day to be filled with love, laughter, and unforgettable moments. From the moment you arrive to the final dance, we hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Most of all, we just want everyone to have a fantastic time celebrating this special chapter in our lives!
+
+<!-- Script tag to include your JavaScript -->
+<script src="slideshowcode.js"></script>
 
 ## What will be happening on the day?
 We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:

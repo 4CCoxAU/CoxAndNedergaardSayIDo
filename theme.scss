@@ -10,21 +10,46 @@ $body-color: black;
 $link-color: #75AADB;
 
 body {
-background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+//background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+background-color: #fffcfd;
+background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 }
 
 .title-block-banner {
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-color: #fffcfd;
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  //background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   padding: 40px 0;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: black;
 }
 
 .title-block-banner h1 {
-  margin: 0;
-  font-size: 2.5em;
-  font-weight: bold;
-}
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+            text-align: center;
+            color: black;
+            font-family: 'Garamond';
+            line-height: 1.4;
+            letter-spacing: 1px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 20px 0;
+            position: relative;
+        }
+        .ampersand {
+            font-family: 'Garamond', cursive;
+            font-size: 2.5em;
+            font-weight: normal;
+            color: black;
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
 
 $light: #525252;
 
