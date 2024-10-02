@@ -13,6 +13,17 @@
   background-size: cover;
 }
 
+/* Parallax image container */
+.parallax-image-container-2 {
+  background-image: url('pics/IMG_20220724_135258.jpg');
+  height: 400px;
+  background-attachment: fixed;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar-nav .nav-item .nav-link {
   font-size: 1.2em;
   font-weight: bold;
