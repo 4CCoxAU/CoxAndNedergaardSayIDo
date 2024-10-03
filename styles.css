@@ -37,6 +37,16 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev{
+opacity: 0.4 !important;
+}
+
+.lb-nav a.lb-next:hover,
+.lb-nav a.lb-prev:hover{
+opacity: 0.8 !important;
+}
+
 @media (max-width: 991px) {
   .navbar-nav {
     flex-direction: row;
