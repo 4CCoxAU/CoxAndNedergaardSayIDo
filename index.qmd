@@ -18,10 +18,13 @@ library('leaflet')
 
 <div class="title-block-banner">
   <h1>
-    Wedding of <br> Christopher Martin Mikkelsen Cox<br>
-            <span class="ampersand">&amp;</span> 
-                <br> Johanne Sofie Krog Nedergård
-        </h1>
+    Wedding of
+  </h1>
+  <h2>
+    <br> Chris Cox<br>
+    <span class="ampersand">&amp;</span> 
+                <br> Johanne Nedergård
+        </h2>
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
@@ -120,17 +123,14 @@ We want our wedding day to be filled with love, laughter, and unforgettable mome
 ## What will be happening on the day?
 We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:
   
-* Ceremony – Where we say "I do" and try not to cry too much.
-```{r, echo = FALSE}
-leaflet() %>%
-  addTiles() %>%
-  addMarkers(lng = 8.445515, lat = 56.899314, popup = "Nørhå Church")
-```
+* Ceremony at Nørhå Church – Where we say "I do" and try not to cry too much.
 
-* We drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination.
+* We drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination: Lærkely (Johanne's Mum's Home)
+
 ```{r, echo = FALSE}
 leaflet() %>%
   addTiles() %>%
+  addMarkers(lng = 8.445515, lat = 56.899314, popup = "Nørhå Church") %>%
   addMarkers(lng = 8.396672, lat = 56.898276, popup = "Lærkely (Johanne's Mum's Home)")
 ```
 
