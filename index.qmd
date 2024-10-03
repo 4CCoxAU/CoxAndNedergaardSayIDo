@@ -2,6 +2,13 @@
 css: styles.css
 editor_options: 
   chunk_output_type: console
+filters:
+   - lightbox
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: top
+  loop: true
 ---
 
 ```{r, include = FALSE}
@@ -26,7 +33,69 @@ library('leaflet')
   </button>
 </div>
 
-<div class="parallax-container"><div class="parallax-image-container"></div></div>
+
+::: {layout="[[1, 1], [1, 1, 1], [1, 1], [1, 1], [1, 1, 1], [1, 1, 1], [1, 1], [1]]"}
+![Seeing Murmuration in Real Life ](pics/244715704_10223966321719532_3720407104811299902_n.jpeg){group="elsewhere"
+description="Murmuration of birds in South Denmark"}
+
+![Dancing at a Wedding](pics/Koldinghus_Wedding_2.jpg){group="elsewhere"
+description="Oak Bluffs is famous for its Gingerbread cottages, busy town center, and party like atmosphere."}
+
+![Dancing at a Wedding](pics/Koldinghus_Wedding_1.jpg){group="elsewhere"
+description="The Edgartown Lighthouse is a short walk from downtown and has beautiful views over the entrance to Edgartown Harbor."}
+
+![Our Tower](pics/PeterBakkerPortræt.jpg){group="elsewhere"
+description="In Our Tower"}
+
+
+![Golden Gate Bridge](pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg){group="elsewhere"
+description="In San Francisco"}
+
+![Nature in Thy](pics/IMG_20220724_135258.jpg){group="elsewhere"
+description="Thy"}
+
+![Øhoppertur](pics/244851273_4472335092822881_848150373213026480_n.jpeg){group="elsewhere"
+description="Thy"}
+
+
+
+![Write](pics/IMG_20210313_200032.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/20220318_045337_0.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/244711646_10223966322079541_2571830643915985654_n.jpeg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/IMG_4643.JPG){group="elsewhere"
+description="Thy"}
+
+
+![Write](pics/IMG-20240205-WA0031.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/IMG-20241002-WA0003.jpg){group="elsewhere"
+description="Thy"}
+
+
+![Write](pics/IMG-20241002-WA0006.jpg){group="elsewhere"
+description="Thy"}
+
+
+![Write](pics/IMG-20241002-WA0007.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/IMG-20241002-WA0008.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg){group="elsewhere"
+description="Thy"}
+
+![Write](pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg){group="elsewhere"
+description="Thy"}
+
+:::
 
 ## Our Love Story
 
