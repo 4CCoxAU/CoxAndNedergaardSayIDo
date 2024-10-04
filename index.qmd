@@ -18,13 +18,10 @@ library('leaflet')
 
 <div class="title-block-banner">
   <h1>
-    Wedding of
-  </h1>
-  <h2>
     <br> Chris Cox<br>
     <span class="ampersand">&amp;</span> 
                 <br> Johanne Nedergård
-        </h2>
+        </h1>
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
@@ -38,89 +35,81 @@ library('leaflet')
 
 
 ::: {layout="[[1, 1], [1, 1, 1], [1, 1], [1, 1], [1, 1, 1], [1, 1, 1], [1, 1], [1]]"}
-![Seeing Murmuration in Real Life ](pics/244715704_10223966321719532_3720407104811299902_n.jpeg){group="elsewhere"
+![Pretending to see bird murmuration in real life. Some of us are better at acting than others.](pics/244715704_10223966321719532_3720407104811299902_n.jpeg){group="elsewhere"
 description="Murmuration of birds in South Denmark"}
 
-![Dancing at a Wedding](pics/Koldinghus_Wedding_2.jpg){group="elsewhere"
+!["He may not be the best of dancers, but he sure does make me laugh"](pics/Koldinghus_Wedding_2.jpg){group="elsewhere"
 description="Oak Bluffs is famous for its Gingerbread cottages, busy town center, and party like atmosphere."}
 
-![Dancing at a Wedding](pics/Koldinghus_Wedding_1.jpg){group="elsewhere"
+![He may not be the best of dancers, but he sure does make me laugh](pics/Koldinghus_Wedding_1.jpg){group="elsewhere"
 description="The Edgartown Lighthouse is a short walk from downtown and has beautiful views over the entrance to Edgartown Harbor."}
 
-![Our Tower](pics/PeterBakkerPortræt.jpg){group="elsewhere"
+![Gazing out on to our kingdom of Aarhus from our tower](pics/PeterBakkerPortræt.jpg){group="elsewhere"
 description="In Our Tower"}
 
 
-![Golden Gate Bridge](pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg){group="elsewhere"
+![That's one hell of a bridge!](pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg){group="elsewhere"
 description="In San Francisco"}
 
-![Nature in Thy](pics/IMG_20220724_135258.jpg){group="elsewhere"
+![Believe it or not, we actually did not pose for the camera](pics/IMG_20220724_135258.jpg){group="elsewhere"
 description="Thy"}
 
-![Øhoppertur](pics/244851273_4472335092822881_848150373213026480_n.jpeg){group="elsewhere"
+![Johanne pretending to laugh at one of Chris' silly jokes that don't deserve a laugh, but that's love for you.](pics/244851273_4472335092822881_848150373213026480_n.jpeg){group="elsewhere"
 description="Thy"}
 
-
-
-![Write](pics/IMG_20210313_200032.jpg){group="elsewhere"
-description="Thy"}
 
 ![Write](pics/20220318_045337_0.jpg){group="elsewhere"
 description="Thy"}
 
-![Write](pics/244711646_10223966322079541_2571830643915985654_n.jpeg){group="elsewhere"
+![Here, we look like idiots - just before jumping on a segway. Appropriate if you ask me.](pics/244711646_10223966322079541_2571830643915985654_n.jpeg){group="elsewhere"
 description="Thy"}
 
-![Write](pics/IMG_4643.JPG){group="elsewhere"
-description="Thy"}
-
-
-![Write](pics/IMG-20240205-WA0031.jpg){group="elsewhere"
-description="Thy"}
-
-![Write](pics/IMG-20241002-WA0003.jpg){group="elsewhere"
+![Just a standard Saturday evening in our books](pics/IMG_4643.JPG){group="elsewhere"
 description="Thy"}
 
 
-![Write](pics/IMG-20241002-WA0006.jpg){group="elsewhere"
+![Here we are attending the Haldi ceremony at Saga & Mayank's amazing wedding in Chandigarh in North India](pics/IMG-20240205-WA0031.jpg){group="elsewhere"
 description="Thy"}
 
+![During corona, we used our family summerhouse in Ebeltoft as a little escape from the disease and impending death of the entire world.](pics/IMG-20241002-WA0003.jpg){group="elsewhere"
+description="adsdsdsdsdsds"}
 
-![Write](pics/IMG-20241002-WA0007.jpg){group="elsewhere"
+
+![Johanne is also strong from all the rugby](pics/IMG-20241002-WA0007.jpg){group="elsewhere"
 description="Thy"}
 
-![Write](pics/IMG-20241002-WA0008.jpg){group="elsewhere"
+![Us ruining a perfectly good photo of the Taj Mahal with our excited faces](pics/IMG-20241002-WA0008.jpg){group="elsewhere"
 description="Thy"}
 
 ![Write](pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg){group="elsewhere"
 description="Thy"}
 
-![Write](pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg){group="elsewhere"
+![Dancing into the early morning at Julie and Alex' amazing wedding at Koldinghus](pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg){group="elsewhere"
 description="Thy"}
 
 :::
 
 ## Our Love Story
+It was our dedication to nerdiness that first brought us together in the autumn of 2019. Being the only two new PhD students at our department, we naturally gravitated towards each other and soon discovered a shared love of silly shenanigans and Noam Chomsky. Before long, we realised that we had an almost eerily number of things in common – we both felt emotionally and culturally connected to the UK and Denmark, we both enjoyed reading weighty, books, both played the violin, and both were passionately interested in language and the mind. The feeling of being understood at so many levels felt magical. 
 
-It all started with a chance encounter on a breezy autumn afternoon. Chris, ever the gentleman, was juggling a coffee in one hand and an armful of books in the other, when out of nowhere – bam – he bumped right into Johanne. Coffee flew, books tumbled, and fate, as they say, was sealed.
+A few months after we met, Johanne plucked up the courage to tell Chris that she liked him in a “non-platonic” way. To nobody else’s great surprise and to all of our guests’ luck next summer, he reciprocated. The relationship took off like a rocket, largely thanks to a certain pandemic that prevented us from spending most of our first year separately abroad for research stays and conferences. A year after we got together, we bought our flat in Aarhus and started our blissful co-existence. Aarhus became our base for many adventures both together and separately, and soon it will function as our base for building a family.
 
-From that moment on, Chris knew Johanne was someone special. He was captivated by her sparkling eyes, infectious laugh, and the way she smiled even when his clumsiness was on full display. Johanne, meanwhile, couldn’t help but be charmed by Chris’s awkwardly adorable attempts to make up for the spilled coffee – which led to their first official date.
 
-That date turned into many more, filled with laughter, adventures, and long conversations about everything from dreams to pizza toppings (they still debate the merits of pineapple!). Together, they discovered their love for spontaneous road trips, late-night dance parties in the kitchen, and binge-watching terrible rom-coms.
+::: {layout="[[1, 1]]}
 
-After countless memories made and love only growing stronger, Chris decided to pop the question in the most Chris way possible: while attempting (and failing) to cook Johanne’s favorite meal. She said yes between bites of slightly burnt pasta, and the rest, as they say, is history.
+![This was the first day we moved in together - we look COMPLETELY calm and reassured in our decision to do so. We don't look the least bit scared (turned out to be the best decision ever, so phew!). ](pics/IMG_20210313_200032.jpg){group="elsewhere"
+description="Thy"}
 
-Now, we invite you to join us in celebrating the next chapter of our love story as we say "I do" and begin our forever adventure together.
+![Love lifts you up.](pics/IMG-20241002-WA0006.jpg){group="elsewhere"
+description="Thy"}
 
-<div class="parallax-container"><div class="parallax-image-container-2"></div></div>
+:::
 
 ## What we envision for our wedding day
-We want our wedding day to be filled with love, laughter, and unforgettable moments. From the moment you arrive to the final dance, we hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Most of all, we just want everyone to have a fantastic time celebrating this special chapter in our lives!
-
-<!-- Script tag to include your JavaScript -->
-<script src="slideshowcode.js"></script>
+We've both dreamt about bringing together everyone that we've been lucky enough to meet on our adventures through time and space - from high school friends to AirBnB hosts, childhood buddies to crazy cousins. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Children are more than welcome (we'll be bringing our own), and we've arranged some games for them. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!
 
 ## What will be happening on the day?
+
 We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:
   
 * Ceremony at Nørhå Church – Where we say "I do" and try not to cry too much.
@@ -134,22 +123,30 @@ leaflet() %>%
   addMarkers(lng = 8.396672, lat = 56.898276, popup = "Lærkely (Johanne's Mum's Home)")
 ```
 
-* We Party Hard – You know what this means. Bring your best dance moves and let’s make this a night to remember!
 
-## Where can we stay in Thy?
-Thy is filled with lovely places to stay, and we’ve gathered a few recommendations just for you! Here are some cozy spots we think you’ll love:
+## Where is Thy? And how do I get there?
+Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we've always thought that it would be the perfect place to celebrate our wedding. 
 
-* [Hotel Thy Comfort Inn] – For a comfortable stay right in the heart of the action.
-* [Pine Tree Lodge] – Perfect if you love a bit of nature and serenity.
-* [The Cozy Cabin] – A cute and charming spot for those who want a peaceful retreat.
+For the international guests, you may be thinking: how on Earth am I going to get to Thy and where am I going to stay? If you're arriving in Denmark by plane, the easiest destination would be Billund Lufthavn. From there, you can rent a car, or take a three-hour train to Snedsted where we'll come and pick you up.
 
-Feel free to reach out to them directly to book your stay!
+## Where can we stay in Stenbjerg, Thy?
+
+Stenbjerg is a small place (just to give you an idea, there wasn't even electricity there until the 1970s). We have therefore secured deals with almost all available accommodation within a 5km radius of Lærkely. Specifically, we have arranged accommodation at the following cozy places at a flat rate of 350kr.:
+
+* Stenbjerg Kro.
+* Stone Mountain Bed & Breakfast.
+* Fiskerhuset Bed & Breakfast.
+* Strandfogedgården (700kr. for 14 people).
+* Stay with a Thy Local (Annette or Lisbeth).
+* 2 AirBnbs.
+
+If you know that you need accommodation when arriving in Thy, let us know and we will arrange it for you as well as transport to and from Lærkely.
 
 ## What about presents?
-Honestly, we’re just so happy to have you with us to celebrate! But if you insist... we won’t say no to presents. 😄 We’ve put together a little list of things we’d love (or, you know, need) as we start this next adventure together: LINK TO WEBSITE! Here’s our wish list, and yes, we’ll gladly accept all of them, thank you very much!
+We want no other presents than your presence. We’re just so happy to have you with us to celebrate. A lot of you are travelling from afar -- be it from India, England, or even Copenhagen!
 
 ## Dresscode
-Wear hats and suits, baby!
+We’re aiming for a ‘dress to impress’ vibe - stylish yet comfortable! The main celebrations will be in a tent (with heating). Whether it’s a sharp outfit or a beautiful ensemble, we trust you’ll strike the perfect balance for the day with a look that suits both the celebration and the weather.
 
 ## Here is a link to the RSVP
 Please answer as soon as possible.
