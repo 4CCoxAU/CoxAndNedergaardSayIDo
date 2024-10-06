@@ -14,96 +14,60 @@ lightbox:
 ```{r, include = FALSE}
 #install.packages('leaflet')
 library('leaflet')
+#install.packages(c("htmlwidgets","shiny","remotes"))
+#remotes::install_github('royfrancis/pixture')
+library(pixture)
 ```
 
 <div class="title-block-banner">
-  <h1>
-    <br> Chris Cox<br>
-    <span class="ampersand">&amp;</span> 
-                <br> Johanne Nedergård
-        </h1>
+  <img src="pics/Chris&JohanneWhiteBorder.png" alt="Chris and Johanne's Wedding" style="width:100%;">
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
-  <button onclick="window.location.href='index.html'" style="background-color: #00777B; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1.2em; margin-right: 10px;">
+  <button onclick="window.location.href='index.html'" style="background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1.2em; margin-right: 10px;">
     English
   </button>
-  <button onclick="window.location.href='index_da.html'" style="background-color: white; color: #00777B; padding: 10px 20px; border: 2px solid #00777B; border-radius: 5px; font-size: 1.2em;">
+  <button onclick="window.location.href='index_da.html'" style="background-color: white; color: black; padding: 10px 20px; border: 2px solid white; border-radius: 5px; font-size: 1.2em;">
     Dansk
   </button>
 </div>
 
 
-::: {layout="[[1, 1], [1, 1, 1], [1, 1], [1, 1], [1, 1, 1], [1, 1, 1], [1, 1], [1]]"}
-![Pretending to see bird murmuration in real life. Some of us are better at acting than others.](pics/244715704_10223966321719532_3720407104811299902_n.jpeg){group="elsewhere"
-description="Murmuration of birds in South Denmark"}
-
-!["He may not be the best of dancers, but he sure does make me laugh"](pics/Koldinghus_Wedding_2.jpg){group="elsewhere"
-description="Oak Bluffs is famous for its Gingerbread cottages, busy town center, and party like atmosphere."}
-
-![He may not be the best of dancers, but he sure does make me laugh](pics/Koldinghus_Wedding_1.jpg){group="elsewhere"
-description="The Edgartown Lighthouse is a short walk from downtown and has beautiful views over the entrance to Edgartown Harbor."}
-
-![Gazing out on to our kingdom of Aarhus from our tower](pics/PeterBakkerPortræt.jpg){group="elsewhere"
-description="In Our Tower"}
-
-
-![That's one hell of a bridge!](pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg){group="elsewhere"
-description="In San Francisco"}
-
-![Believe it or not, we actually did not pose for the camera](pics/IMG_20220724_135258.jpg){group="elsewhere"
-description="Thy"}
-
-![Johanne pretending to laugh at one of Chris' silly jokes that don't deserve a laugh, but that's love for you.](pics/244851273_4472335092822881_848150373213026480_n.jpeg){group="elsewhere"
-description="Thy"}
-
-
-![Write](pics/20220318_045337_0.jpg){group="elsewhere"
-description="Thy"}
-
-![Here, we look like idiots - just before jumping on a segway. Appropriate if you ask me.](pics/244711646_10223966322079541_2571830643915985654_n.jpeg){group="elsewhere"
-description="Thy"}
-
-![Just a standard Saturday evening in our books](pics/IMG_4643.JPG){group="elsewhere"
-description="Thy"}
-
-
-![Here we are attending the Haldi ceremony at Saga & Mayank's amazing wedding in Chandigarh in North India](pics/IMG-20240205-WA0031.jpg){group="elsewhere"
-description="Thy"}
-
-![During corona, we used our family summerhouse in Ebeltoft as a little escape from the disease and impending death of the entire world.](pics/IMG-20241002-WA0003.jpg){group="elsewhere"
-description="adsdsdsdsdsds"}
-
-
-![Johanne is also strong from all the rugby](pics/IMG-20241002-WA0007.jpg){group="elsewhere"
-description="Thy"}
-
-![Us ruining a perfectly good photo of the Taj Mahal with our excited faces](pics/IMG-20241002-WA0008.jpg){group="elsewhere"
-description="Thy"}
-
-![Write](pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg){group="elsewhere"
-description="Thy"}
-
-![Dancing into the early morning at Julie and Alex' amazing wedding at Koldinghus](pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg){group="elsewhere"
-description="Thy"}
-
-:::
-
 ## Our Love Story
-It was our dedication to nerdiness that first brought us together in the autumn of 2019. Being the only two new PhD students at our department, we naturally gravitated towards each other and soon discovered a shared love of silly shenanigans and Noam Chomsky. Before long, we realised that we had an almost eerily number of things in common – we both felt emotionally and culturally connected to the UK and Denmark, we both enjoyed reading weighty, books, both played the violin, and both were passionately interested in language and the mind. The feeling of being understood at so many levels felt magical. 
+It was our dedication to nerdiness that first brought us together in the autumn of 2019. Being the only two new PhD students at our department, we naturally gravitated towards each other and soon discovered a shared love of silly shenanigans and Noam Chomsky. Before long, we realised that we had an almost eerily number of things in common – we both felt emotionally and culturally connected to the UK and Denmark, we  both played the violin, and both were passionately interested in language and the mind. The feeling of being understood at so many levels felt magical. 
 
 A few months after we met, Johanne plucked up the courage to tell Chris that she liked him in a “non-platonic” way. To nobody else’s great surprise and to all of our guests’ luck next summer, he reciprocated. The relationship took off like a rocket, largely thanks to a certain pandemic that prevented us from spending most of our first year separately abroad for research stays and conferences. A year after we got together, we bought our flat in Aarhus and started our blissful co-existence. Aarhus became our base for many adventures both together and separately, and soon it will function as our base for building a family.
 
 
-::: {layout="[[1, 1]]}
 
-![This was the first day we moved in together - we look COMPLETELY calm and reassured in our decision to do so. We don't look the least bit scared (turned out to be the best decision ever, so phew!). ](pics/IMG_20210313_200032.jpg){group="elsewhere"
-description="Thy"}
+```{r, echo = FALSE}
+dfr <- data.frame(
+  paths = c(
+    "pics/IMG-20241002-WA0007.jpg",
+    "pics/IMG_20210313_200032.jpg",
+    "pics/IMG-20241002-WA0006.jpg"
+    )
+  )
 
-![Love lifts you up.](pics/IMG-20241002-WA0006.jpg){group="elsewhere"
-description="Thy"}
+captions <- c("Aarhus, 2021: Love lifts you up, Part I", 
+              "Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!",
+              "Aarhus, 2021: Love lifts you up, Part II"
+)
 
-:::
+pixture::pixgallery(
+  dfr$paths,
+  captions,
+  caption_valign = "below",
+  h = "500px",
+  w = "500px",
+  width = "100%",
+  height = "100%",
+  border_radius = "5px",
+  layout = "rhombus",
+  shuffle = FALSE,
+  link = TRUE
+)
+```
 
 ## What we envision for our wedding day
 We've both dreamt about bringing together everyone that we've been lucky enough to meet on our adventures through time and space - from high school friends to AirBnB hosts, childhood buddies to crazy cousins. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Children are more than welcome (we'll be bringing our own), and we've arranged some games for them. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!
@@ -128,6 +92,68 @@ leaflet() %>%
 Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we've always thought that it would be the perfect place to celebrate our wedding. 
 
 For the international guests, you may be thinking: how on Earth am I going to get to Thy and where am I going to stay? If you're arriving in Denmark by plane, the easiest destination would be Billund Lufthavn. From there, you can rent a car, or take a three-hour train to Snedsted where we'll come and pick you up.
+
+
+```{r, echo = FALSE}
+captions_mosaic <- c("Thy, 2021: Believe it or not, we actually didn't pose for the camera for this picture",
+                     "Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable",
+                     "San Francisco, 2023: One hell of a bridge!",
+                     "Ebeltoft, 2020: During corona, we spent a lot of time in our family summerhouse as a little escape from the disease and what seemed like the impending death of the entire world."
+                     )
+
+dfr_mosaic <- c("pics/IMG_20220724_135258.jpg",
+                "pics/244715704_10223966321719532_3720407104811299902_n.jpeg",
+                "pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg",
+                "pics/IMG-20241002-WA0003.jpg")
+
+pixture::pixgallery(
+  dfr_mosaic,
+  captions_mosaic,
+  caption_valign = "below",
+  h = "300px",
+  w = "300px",
+  width = "100%",
+  height = "100%",
+  layout = "grid",
+  shuffle = FALSE,
+  link = TRUE
+)
+```
+
+
+```{r, eval = FALSE}
+captions_collage <- c(
+  "He may not be the best of dancers, but he sure does make me laugh",
+  "He may not be the best of dancers, but he sure does make me laugh",
+  "Gazing out on to our kingdom of Aarhus from our tower",
+  "Johanne pretending to laugh at one of Chris' silly jokes that don't deserve a laugh, but that's love for you.",
+  "Here, we look like idiots - just before jumping on a segway. Appropriate if you ask me.",
+  "Just a standard Saturday evening in our books",
+  "Here we are attending the Haldi ceremony at Saga & Mayank's amazing wedding in Chandigarh in North India",
+  "Us ruining a perfectly good photo of the Taj Mahal with our excited faces",
+  "Dancing",
+  "Dancing into the early morning at Julie and Alex' amazing wedding at Koldinghus"
+  )
+
+dfr_collage <- data.frame(
+  paths = c(
+"pics/Koldinghus_Wedding_2.jpg",
+"pics/Koldinghus_Wedding_1.jpg",
+"pics/PeterBakkerPortræt.jpg",
+"pics/244851273_4472335092822881_848150373213026480_n.jpeg",
+"pics/244711646_10223966322079541_2571830643915985654_n.jpeg",
+"pics/IMG_4643.JPG",
+"pics/IMG-20240205-WA0031.jpg",
+"pics/IMG-20241002-WA0008.jpg",
+"pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg",
+"pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg"
+    )
+  )
+
+
+#pics/20220318_045337_0.jpg
+```
+
 
 ## Where can we stay in Stenbjerg, Thy?
 
