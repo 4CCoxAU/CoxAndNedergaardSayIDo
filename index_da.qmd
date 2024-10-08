@@ -10,19 +10,17 @@ library('leaflet')
 ```
 
 <div class="title-block-banner">
-  <h1>Bryllup mellem <br> <b>Christopher Martin Mikkelsen Cox</b> <br> & <br> <b>Johanne Sofie Krog Nedergård</b></h1>
+  <img src="pics/Chris&JohanneWhiteBorder_da.png" alt="Chris and Johanne's Wedding" style="width:100%;">
 </div>
 
 <div style="text-align: center; margin-top: 20px;">
-  <button onclick="window.location.href='index.html'" style="background-color: white; color: #00777B; padding: 10px 20px; border: 2px solid #00777B; border-radius: 5px; font-size: 1.2em; margin-right: 10px;">
+  <button onclick="window.location.href='index.html'" style="background-color: white; color: black; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1.2em; margin-right: 10px;">
     English
   </button>
-  <button onclick="window.location.href='index_da.html'" style="background-color: #00777B; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 1.2em;">
+  <button onclick="window.location.href='index_da.html'" style="background-color: black; color: white; padding: 10px 20px; border: 2px solid white; border-radius: 5px; font-size: 1.2em;">
     Dansk
   </button>
 </div>
-
-<div class="parallax-container"><div class="parallax-image-container"></div></div>
 
 ## Vores Kærlighedshistorie 
 Det hele startede med et tilfældigt møde en blæsende eftermiddag om efteråret. Chris, altid en gentleman, havde en kaffe i den ene hånd og en stak bøger i den anden, da han pludselig – bam – stødte lige ind i Johanne. Kaffen fløj, bøgerne væltede, og skæbnen, som man siger, var beseglet.
