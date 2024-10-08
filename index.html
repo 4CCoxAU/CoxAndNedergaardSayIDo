@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -72,6 +38,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -99,11 +68,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script src="site_libs/htmlwidgets-1.6.0/htmlwidgets.js"></script>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
 <link href="site_libs/simplelightbox-2.1.0/css/simplelightbox.css" rel="stylesheet">
 <script src="site_libs/simplelightbox-2.1.0/js/simplelightbox.js"></script>
 <link href="site_libs/pixgallery-0/css/pixgallery.css" rel="stylesheet">
 <script src="site_libs/pixgallery-binding-0.1.0/pixgallery.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
@@ -156,72 +126,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="our-love-story">Our Love Story</h2>
 <p>It was our dedication to nerdiness that first brought us together in the autumn of 2019. Being the only two new PhD students at our department, we naturally gravitated towards each other and soon discovered a shared love of silly shenanigans and Noam Chomsky. Before long, we realised that we had an almost eerily number of things in common – we both felt emotionally and culturally connected to the UK and Denmark, we both played the violin, and both were passionately interested in language and the mind. The feeling of being understood at so many levels felt magical.</p>
 <p>A few months after we met, Johanne plucked up the courage to tell Chris that she liked him in a “non-platonic” way. To nobody else’s great surprise and to all of our guests’ luck next summer, he reciprocated. The relationship took off like a rocket, largely thanks to a certain pandemic that prevented us from spending most of our first year separately abroad for research stays and conferences. A year after we got together, we bought our flat in Aarhus and started our blissful co-existence. Aarhus became our base for many adventures both together and separately, and soon it will function as our base for building a family.</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div id="htmlwidget-39d8f3f5c00eabf19003" style="width:100%;height:100%;" class="pixgallery html-widget "></div>
-<script type="application/json" data-for="htmlwidget-39d8f3f5c00eabf19003">{"x":{"path":["pics/IMG-20241002-WA0007.jpg","pics/IMG_20210313_200032.jpg","pics/IMG-20241002-WA0006.jpg"],"caption":["Aarhus, 2021: Love lifts you up, Part I","Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!","Aarhus, 2021: Love lifts you up, Part II"],"caption_valign":"below","caption_halign":"left","link":[true],"h":"500px","w":"500px","gap":"5px","border_radius":"5px","layout":"rhombus","shuffle":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-af949cdebee470d35701" style="width:100%;height:100%;" class="pixgallery html-widget"></div>
+<script type="application/json" data-for="htmlwidget-af949cdebee470d35701">{"x":{"path":["pics/IMG-20241002-WA0007.jpg","pics/IMG_20210313_200032.jpg","pics/IMG-20241002-WA0006.jpg"],"caption":["Aarhus, 2021: Love lifts you up, Part I","Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!","Aarhus, 2021: Love lifts you up, Part II"],"caption_valign":"top","caption_halign":"left","link":[true],"h":"500px","w":"500px","gap":"5px","border_radius":"5px","layout":"rhombus","shuffle":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
 <section id="what-we-envision-for-our-wedding-day" class="level2">
 <h2 class="anchored" data-anchor-id="what-we-envision-for-our-wedding-day">What we envision for our wedding day</h2>
-<p>We’ve both dreamt about bringing together everyone that we’ve been lucky enough to meet on our adventures through time and space - from high school friends to AirBnB hosts, childhood buddies to crazy cousins. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Children are more than welcome (we’ll be bringing our own), and we’ve arranged some games for them. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!</p>
+<p>For a long time, we’ve both dreamed of bringing together all the wonderful people we’ve met during our adventures through time and space — from high school friends to AirBnB hosts, childhood buddies to crazy cousins. Our hope is to create a laid-back, informal atmosphere filled with music, games, and all sorts of entertainment.</p>
+<p>Some parts of the celebration will be in English, and others in Danish. If any of our non-Danish guests look a bit confused, we kindly ask our Danish friends to help out and explain what’s going on.</p>
+<p>Children are more than welcome (we’ll probably have our one with us!), and we’ve planned some fun activities for them, like treasure hunts and other games.</p>
+<p>Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-25cf11f214f1f8f1835f" style="width:100%;height:100%;" class="pixgallery html-widget"></div>
+<script type="application/json" data-for="htmlwidget-25cf11f214f1f8f1835f">{"x":{"path":["pics/PeterBakkerPortræt.jpg","pics/Koldinghus_Wedding_1.jpg","pics/IMG-20241002-WA0008.jpg"],"caption":["Aarhus 2021: Gazing out on to our kingdom of Aarhus from our tower","Koldinghus, 2022: Dancing into the wee hours of the morrning at Julie and Alex' amazing wedding","Agra, India 2024: Us with our excited faces in front of the most romatic building in the world: Taj Mahal"],"caption_valign":"below","caption_halign":"left","link":[true],"h":"500px","w":"500px","gap":"5px","border_radius":"5px","layout":"rhombus","shuffle":false},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
 <section id="what-will-be-happening-on-the-day" class="level2">
 <h2 class="anchored" data-anchor-id="what-will-be-happening-on-the-day">What will be happening on the day?</h2>
-<p>We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:</p>
-<ul>
-<li><p>Ceremony at Nørhå Church – Where we say “I do” and try not to cry too much.</p></li>
-<li><p>We drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination: Lærkely (Johanne’s Mum’s Home)</p></li>
-</ul>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-dd8acb47cbeac9118c5c" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-dd8acb47cbeac9118c5c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[56.899314,8.445515,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Nørhå Church",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[56.898276,8.396672,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lærkely (Johanne's Mum's Home)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[56.898276,56.899314],"lng":[8.396672,8.445515]}},"evals":[],"jsHooks":[]}</script>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="pics/programme_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="pics/programme_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="748"></a></p>
+</figure>
+</div>
 </div>
 </div>
 </section>
 <section id="where-is-thy-and-how-do-i-get-there" class="level2">
 <h2 class="anchored" data-anchor-id="where-is-thy-and-how-do-i-get-there">Where is Thy? And how do I get there?</h2>
 <p>Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we’ve always thought that it would be the perfect place to celebrate our wedding.</p>
+<p>There are two main locations to be aware of:</p>
+<ul>
+<li>Wedding Ceremony (where we say “I do” and try not to cry too much) – at Nørhå Church, Morten Nielsens Vej 11, 7752 Snedsted.</li>
+<li>Celebration at Lærkely in a big circus tent - at Lærkely, Kalkværksvej 20, 7752 Snedsted.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-2e09f4d988d9a284ff76" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-2e09f4d988d9a284ff76">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[56.899314,8.445515,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Nørhå Church",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[56.898276,8.396672000000001,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Lærkely (Johanne's Mum's Home)",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[56.898276,56.899314],"lng":[8.396672000000001,8.445515]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <p>For the international guests, you may be thinking: how on Earth am I going to get to Thy and where am I going to stay? If you’re arriving in Denmark by plane, the easiest destination would be Billund Lufthavn. From there, you can rent a car, or take a three-hour train to Snedsted where we’ll come and pick you up.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-030ed362fdbc28e2efc9" style="width:100%;height:100%;" class="pixgallery html-widget "></div>
-<script type="application/json" data-for="htmlwidget-030ed362fdbc28e2efc9">{"x":{"path":["pics/IMG_20220724_135258.jpg","pics/244715704_10223966321719532_3720407104811299902_n.jpeg","pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg","pics/IMG-20241002-WA0003.jpg"],"caption":["Thy, 2021: Believe it or not, we actually didn't pose for the camera for this picture","Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable","San Francisco, 2023: One hell of a bridge!","Ebeltoft, 2020: During corona, we spent a lot of time in our family summerhouse as a little escape from the disease and what seemed like the impending death of the entire world."],"caption_valign":"below","caption_halign":"left","link":[true],"h":"300px","w":"300px","gap":"5px","border_radius":"0px","layout":"grid","shuffle":false},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6a3f85b9f7aeb4e2944e" style="width:100%;height:100%;" class="pixgallery html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6a3f85b9f7aeb4e2944e">{"x":{"path":["pics/IMG_20220724_135258.jpg","pics/244715704_10223966321719532_3720407104811299902_n.jpeg","pics/IMG_4643.JPG"],"caption":["Thy, 2021: Believe it or not, we actually didn't pose for the camera for this picture","Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable","Copenhagen, 2020: Don't ask us why we have lipstick all over our faces"],"caption_valign":"below","caption_halign":"left","link":[true],"h":"300px","w":"300px","gap":"5px","border_radius":"0px","layout":"rhombus","shuffle":false},"evals":[],"jsHooks":[]}</script>
 </div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>captions_collage <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"He may not be the best of dancers, but he sure does make me laugh"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"He may not be the best of dancers, but he sure does make me laugh"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Gazing out on to our kingdom of Aarhus from our tower"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Johanne pretending to laugh at one of Chris' silly jokes that don't deserve a laugh, but that's love for you."</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Here, we look like idiots - just before jumping on a segway. Appropriate if you ask me."</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Just a standard Saturday evening in our books"</span>,</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Here we are attending the Haldi ceremony at Saga &amp; Mayank's amazing wedding in Chandigarh in North India"</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Us ruining a perfectly good photo of the Taj Mahal with our excited faces"</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Dancing"</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Dancing into the early morning at Julie and Alex' amazing wedding at Koldinghus"</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>dfr_collage <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">paths =</span> <span class="fu">c</span>(</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/Koldinghus_Wedding_2.jpg"</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/Koldinghus_Wedding_1.jpg"</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/PeterBakkerPortræt.jpg"</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/244851273_4472335092822881_848150373213026480_n.jpeg"</span>,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/244711646_10223966322079541_2571830643915985654_n.jpeg"</span>,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/IMG_4643.JPG"</span>,</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/IMG-20240205-WA0031.jpg"</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/IMG-20241002-WA0008.jpg"</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg"</span>,</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">"pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg"</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">#pics/20220318_045337_0.jpg</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="where-can-we-stay-in-stenbjerg-thy" class="level2">
@@ -663,6 +619,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"fade","descPosition":"top","closeEffect":"fade","selector":".lightbox","loop":true});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
