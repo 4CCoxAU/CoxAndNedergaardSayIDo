@@ -17,6 +17,7 @@ library('leaflet')
 #install.packages(c("htmlwidgets","shiny","remotes"))
 #remotes::install_github('royfrancis/pixture')
 library(pixture)
+library(knitr)
 ```
 
 <div class="title-block-banner">
@@ -40,7 +41,7 @@ A few months after we met, Johanne plucked up the courage to tell Chris that she
 
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, fig.align='center'}
 dfr <- data.frame(
   paths = c(
     "pics/IMG-20241002-WA0007.jpg",
@@ -52,6 +53,45 @@ dfr <- data.frame(
 captions <- c("Aarhus, 2021: Love lifts you up, Part I", 
               "Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!",
               "Aarhus, 2021: Love lifts you up, Part II"
+)
+
+pixture::pixgallery(
+  dfr$paths,
+  captions,
+  caption_valign = "top",
+  h = "500px",
+  w = "500px",
+  width = "100%",
+  height = "100%",
+  border_radius = "5px",
+  layout = "rhombus",
+  shuffle = FALSE,
+  link = TRUE
+)
+```
+
+## What we envision for our wedding day
+For a long time, we've both dreamed of bringing together all the wonderful people we've met during our adventures through time and space — from high school friends to AirBnB hosts, childhood buddies to crazy cousins. Our hope is to create a laid-back, informal atmosphere filled with music, games, and all sorts of entertainment.
+
+Some parts of the celebration will be in English, and others in Danish. If any of our non-Danish guests look a bit confused, we kindly ask our Danish friends to help out and explain what's going on.
+
+Children are more than welcome (we’ll probably have our one with us!), and we've planned some fun activities for them, like treasure hunts and other games.
+
+Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!
+
+
+```{r, echo = FALSE}
+dfr <- data.frame(
+  paths = c(
+    "pics/PeterBakkerPortræt.jpg",
+    "pics/Koldinghus_Wedding_1.jpg",
+    "pics/IMG-20241002-WA0008.jpg"
+    )
+  )
+
+captions <- c("Aarhus 2021: Gazing out on to our kingdom of Aarhus from our tower",
+              "Koldinghus, 2022: Dancing into the wee hours of the morrning at Julie and Alex' amazing wedding",
+              "Agra, India 2024: Us with our excited faces in front of the most romatic building in the world: Taj Mahal"
 )
 
 pixture::pixgallery(
@@ -69,16 +109,19 @@ pixture::pixgallery(
 )
 ```
 
-## What we envision for our wedding day
-We've both dreamt about bringing together everyone that we've been lucky enough to meet on our adventures through time and space - from high school friends to AirBnB hosts, childhood buddies to crazy cousins. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Expect plenty of fun, delicious food, and a dance floor that will stay busy well into the night. Children are more than welcome (we'll be bringing our own), and we've arranged some games for them. Most of all, we just want everyone to have a fantastic time celebrating this fun time in our lives!
-
 ## What will be happening on the day?
 
-We’ve got a day packed with love and celebration, and we’re so excited to share it with you! Here’s what you can expect:
-  
-* Ceremony at Nørhå Church – Where we say "I do" and try not to cry too much.
+```{r, echo = FALSE, fig.align='center', fig.width=3, fig.height=5}
+include_graphics("pics/programme_2.png")
+``` 
 
-* We drive to Kalkværksvej 20 – A fun 4-minute road trip to our next destination: Lærkely (Johanne's Mum's Home)
+## Where is Thy? And how do I get there?
+Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we've always thought that it would be the perfect place to celebrate our wedding.
+
+There are two main locations to be aware of:
+
+* Wedding Ceremony (where we say "I do" and try not to cry too much) – at Nørhå Church, Morten Nielsens Vej 11, 7752 Snedsted.
+* Celebration at Lærkely in a big circus tent - at Lærkely, Kalkværksvej 20, 7752 Snedsted.
 
 ```{r, echo = FALSE}
 leaflet() %>%
@@ -88,23 +131,18 @@ leaflet() %>%
 ```
 
 
-## Where is Thy? And how do I get there?
-Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we've always thought that it would be the perfect place to celebrate our wedding. 
-
 For the international guests, you may be thinking: how on Earth am I going to get to Thy and where am I going to stay? If you're arriving in Denmark by plane, the easiest destination would be Billund Lufthavn. From there, you can rent a car, or take a three-hour train to Snedsted where we'll come and pick you up.
 
 
 ```{r, echo = FALSE}
 captions_mosaic <- c("Thy, 2021: Believe it or not, we actually didn't pose for the camera for this picture",
                      "Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable",
-                     "San Francisco, 2023: One hell of a bridge!",
-                     "Ebeltoft, 2020: During corona, we spent a lot of time in our family summerhouse as a little escape from the disease and what seemed like the impending death of the entire world."
+                     "Copenhagen, 2020: Don't ask us why we have lipstick all over our faces"
                      )
 
 dfr_mosaic <- c("pics/IMG_20220724_135258.jpg",
                 "pics/244715704_10223966321719532_3720407104811299902_n.jpeg",
-                "pics/original_bab4804d-6de7-46e4-b4aa-588e520c0f6d_IMG_20230408_150105.jpg",
-                "pics/IMG-20241002-WA0003.jpg")
+                "pics/IMG_4643.JPG")
 
 pixture::pixgallery(
   dfr_mosaic,
@@ -114,46 +152,11 @@ pixture::pixgallery(
   w = "300px",
   width = "100%",
   height = "100%",
-  layout = "grid",
+  layout = "rhombus",
   shuffle = FALSE,
   link = TRUE
 )
 ```
-
-
-```{r, eval = FALSE}
-captions_collage <- c(
-  "He may not be the best of dancers, but he sure does make me laugh",
-  "He may not be the best of dancers, but he sure does make me laugh",
-  "Gazing out on to our kingdom of Aarhus from our tower",
-  "Johanne pretending to laugh at one of Chris' silly jokes that don't deserve a laugh, but that's love for you.",
-  "Here, we look like idiots - just before jumping on a segway. Appropriate if you ask me.",
-  "Just a standard Saturday evening in our books",
-  "Here we are attending the Haldi ceremony at Saga & Mayank's amazing wedding in Chandigarh in North India",
-  "Us ruining a perfectly good photo of the Taj Mahal with our excited faces",
-  "Dancing",
-  "Dancing into the early morning at Julie and Alex' amazing wedding at Koldinghus"
-  )
-
-dfr_collage <- data.frame(
-  paths = c(
-"pics/Koldinghus_Wedding_2.jpg",
-"pics/Koldinghus_Wedding_1.jpg",
-"pics/PeterBakkerPortræt.jpg",
-"pics/244851273_4472335092822881_848150373213026480_n.jpeg",
-"pics/244711646_10223966322079541_2571830643915985654_n.jpeg",
-"pics/IMG_4643.JPG",
-"pics/IMG-20240205-WA0031.jpg",
-"pics/IMG-20241002-WA0008.jpg",
-"pics/Koldinghus Wedding, Julie and Alex-21-21-10.jpg",
-"pics/Koldinghus Wedding, Julie and Alex-21-24-43.jpg"
-    )
-  )
-
-
-#pics/20220318_045337_0.jpg
-```
-
 
 ## Where can we stay in Stenbjerg, Thy?
 
