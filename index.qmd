@@ -49,7 +49,7 @@ dfr <- data.frame(
   )
 
 captions <- c("Aarhus, 2021: Love lifts you up, Part I", 
-              "Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!",
+              "Aarhus, 2021: This was the first day we moved in together - and we look COMPLETELY calm and reassured in our decision to do so (it turned out to be the best decision ever, so phew!)",
               "Aarhus, 2021: Love lifts you up, Part II"
 )
 
@@ -83,7 +83,7 @@ dfr <- data.frame(
     )
   )
 
-captions <- c("Aarhus 2021: Gazing out on to our kingdom of Aarhus from our tower",
+captions <- c("Aarhus 2021: View of Aarhus from our tower",
               "Koldinghus, 2022: Dancing into the wee hours of the morrning at Julie and Alex' amazing wedding",
               "Agra, India 2024: Us with our excited faces in front of the most romatic building in the world: Taj Mahal"
 )
@@ -132,14 +132,14 @@ The setting for this party is at the edge of a forest in the middle of nowhere. 
 We want no other presents than your presence (Chris wanted to delete this cheesy statement, but Johanne insisted on keeping it). We’re just so happy to have you with us to celebrate. A lot of you are travelling from afar -- be it from India, England, or even Copenhagen!
 
 ```{r, echo = FALSE}
-captions_mosaic <- c("Thy, 2021: Believe it or not, we actually didn't pose for the camera for this picture",
-                     "Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable",
-                     "Copenhagen, 2020: Don't ask us why we have lipstick all over our faces"
+captions_mosaic <- c("Thy, 2021: Believe it or not, we actually didn't pose for this picture",
+                     "Copenhagen, 2020: Don't ask us why we have lipstick all over our faces",
+                     "Sønderjylland, 2021: The excitement of seeing starling murmurations in real life is palpable"
                      )
 
 dfr_mosaic <- c("pics/IMG_20220724_135258.jpg",
-                "/Users/au620441/Desktop/244715704_10223966321719532_3720407104811299902_n.jpeg",
-                "pics/IMG_4643.JPG")
+                "pics/IMG_4643.JPG",
+                "pics/244715704_10223966321719532_3720407104811299902_n.jpeg")
 
 pixture::pixgallery(
   dfr_mosaic,
@@ -159,5 +159,5 @@ pixture::pixgallery(
 Garden Party Formal - think outfits with pastel colours, floral patterns, and summer fabrics. This is an outdoor event, as the main celebrations will be in a tent with heating - so keep in mind to dress according to the weather too. If in doubt, don't hesitate to ask!
 
 ## RSVP
-Please fill out [our questionnaire](https://forms.gle/nMNPGdEiGqooiTTo7).
+Please fill out [our questionnaire](https://forms.gle/nMNPGdEiGqooiTTo7) before February 9th, 2025.
 
