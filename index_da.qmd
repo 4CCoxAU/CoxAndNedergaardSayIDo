@@ -2,6 +2,13 @@
 css: styles.css
 editor_options: 
   chunk_output_type: console
+filters:
+   - lightbox
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: top
+  loop: true
 ---
 
 ```{r, include = FALSE}
@@ -98,8 +105,8 @@ pixture::pixgallery(
 
 ## Program
 
-```{r, echo = FALSE, fig.align='center', fig.width=3, fig.height=5}
-include_graphics("pics/programme_2.png")
+```{r, echo = FALSE, fig.align='center', fig.width=7, fig.height=9}
+include_graphics("pics/wedding_invitation_EN_DA-2_005.png")
 ``` 
 
 ## Sted 

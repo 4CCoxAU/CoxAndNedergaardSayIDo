@@ -104,8 +104,8 @@ pixture::pixgallery(
 
 ## Programme
 
-```{r, echo = FALSE, fig.align='center', fig.width=3, fig.height=5}
-include_graphics("pics/programme_2.png")
+```{r, echo = FALSE, fig.align='center', fig.width=7, fig.height=9}
+include_graphics("pics/program_EN.png")
 ``` 
 
 ## Location
