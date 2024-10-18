@@ -37,7 +37,7 @@ library(knitr)
 ## Our Love Story
 It was our dedication to nerdiness that first brought us together in the autumn of 2019. Being the only two new PhD students at our department, we naturally gravitated towards each other and soon discovered a shared love of silly shenanigans and Noam Chomsky. Before long, we realised that we had an almost eerily number of things in common, and a few months after we met, Johanne plucked up the courage to tell Chris that she liked him in a “non-platonic” way. To nobody else’s great surprise and to all of our guests’ luck next summer, he reciprocated. The relationship took off like a rocket, largely thanks to a certain pandemic that prevented us from spending most of our first year separately abroad for research stays and conferences. A year after we got together, we bought our flat in Aarhus and started a bread-baking, newspaper-reading, violin-playing, dinner-party-hosting, morning-singing, blissful co-existence.
 
-One Saturday morning in October 2023, Johanne got out of the shower to discover Chris decked out in a suit holding a rose, classical music streaming from the living room. She immediately suspected what was up but no Question was Popped before she had worked a bit for it – in a classic move, Chris had constructed a crossword puzzle that could only be solved by someone who remembered quite specific details of our relationship. Fortunately, the clues did not stump Johanne for long, and the engagement commenced. Because big decisions love company, we also agreed not long after that we wanted to have a child – a child that we’re very excited to meet in the beginning of November and who will be doing his best to bring up the average cuteness at the wedding!
+One Saturday morning in October 2023, Johanne got out of the shower to discover Chris decked out in a suit holding a rose, with classical music streaming out of the living room. She immediately suspected what was up, but no question was popped before she had worked a bit for it – in a classic move, Chris had constructed a crossword puzzle that could only be solved by someone who remembered quite specific details of our relationship. Fortunately, the clues did not stump Johanne for long, and the engagement commenced. Because big decisions love company, we also agreed not long after that we wanted to have a child – a child that we’re very excited to meet in the beginning of November and who will be doing his best to bring up the average cuteness at the wedding!
 
 ```{r, echo = FALSE, fig.align='center'}
 dfr <- data.frame(
@@ -69,10 +69,9 @@ pixture::pixgallery(
 ```
 
 ## Our Dream Wedding Day
-The most important part of this wedding for both of us (apart from… well… getting married) is the opportunity to bring together all the wonderful people we've met during our adventures through time and space — from high school friends to AirBnB hosts, childhood buddies to crazy cousins. Expect plenty of fun, delicious food, and a dance floor with live music that will stay busy well into the night. From the moment you arrive, we want you to feel welcome and hope you feel the joy and excitement we’re feeling. Children are more than welcome (we’ll probably have our one with us!), and we've planned some fun activities for them, like treasure hunts and other games.
+The most important part of this wedding for both of us (apart from… well… getting married) is the opportunity to bring together all the wonderful people we've met during our adventures through time and space — from high school friends to AirBnB hosts, childhood buddies to crazy cousins. Expect plenty of good vibes, laughter, delicious food, and a dance floor with live music that will stay busy well into the night. Children are more than welcome (we’ll probably have our one with us!), and we've planned some fun activities for them, like treasure hunts and other games.
 
-Everyone is welcome at the church ceremony (you may want to have eaten lunch before) as well as of course at the party itself. Some parts of the celebration will be in English, and others in Danish. If any of our non-Danish guests look a bit confused at the Danish traditions, we kindly ask our Danish friends to help out and explain what's going on. You are welcome to do a sketch, write a song, give a speech or whatever else expression of love for us your heart desires! We just ask that you be mindful that there is enough time for everyone who wants to do so to do so. If you have plans of this nature, please let Peter Cox (XXXX), our toastmaster, know.
-
+Everyone is welcome at the church ceremony (you may want to have eaten lunch before) as well as of course at the party itself. Some parts of the celebration will be in English, and others in Danish. If any of our non-Danish guests look a bit confused at the Danish traditions, we kindly ask our Danish friends to help out and explain what's going on. You are welcome to do a sketch, write a song, give a speech, or whatever else expression of love for us your heart desires! We just ask that you be mindful that there is enough time for everyone who wants to do so to do so. If you have plans of this nature, please let our toastmaster, Peter Cox, know (peter.coxdk@hotmail.com).
 
 ```{r, echo = FALSE}
 dfr <- data.frame(
@@ -84,7 +83,7 @@ dfr <- data.frame(
   )
 
 captions <- c("Aarhus 2021: View of Aarhus from our tower",
-              "Koldinghus, 2022: Dancing into the wee hours of the morrning at Julie and Alex' amazing wedding",
+              "Koldinghus, 2022: Dancing into the wee hours of the morning at Julie and Alex' amazing wedding",
               "Agra, India 2024: Us with our excited faces in front of the most romatic building in the world: Taj Mahal"
 )
 
@@ -110,12 +109,12 @@ include_graphics("pics/programme_2.png")
 ``` 
 
 ## Location
-Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up and we've always thought that it would be the perfect place to celebrate our wedding. Places to note down in your diaries:
+Thy is an area in the north west of Jutland known for its unbelievably beautiful, raw, and unique natural environment. This was where Johanne was lucky enough to grow up, and we've always thought that it would be the perfect place to celebrate our wedding. Places to note down in your diaries:
 
 * Wedding Ceremony: Nørhå Church, Morten Nielsens Vej 11, 7752 Snedsted.
 * Wedding Celebrations: Lærkely, Kalkværksvej 20, 7752 Snedsted.
 
-For the international guests, you may be thinking: how on Earth am I going to get to Thy? If you're arriving in Denmark by plane, the easiest flight destination is Billund Lufthavn. From there, you can rent a car, or take a three-hour train trip to Snedsted (the closest train station) and we'll come and pick you up (if you're lucky -- if not, it's only a breezy two-hour walk).
+For the international guests, you may be thinking: how on Earth am I going to get to Thy? If you're arriving in Denmark by plane, the easiest flight destinations would be Billund Lufthavn or Aalborg Lufthavn. From there, you can rent a car, or take a three-hour train and/or bus trip to Snedsted (the closest train station), and we'll come and pick you up (if you're lucky -- if not, it's only a breezy two-hour walk).
 
 ```{r, echo = FALSE}
 leaflet() %>%
@@ -125,11 +124,10 @@ leaflet() %>%
 ```
 
 ## Accommodation
-
-The setting for this party is at the edge of a forest in the middle of nowhere. We have therefore secured deals with almost all available accommodation within a 5km radius of Lærkely. If you know that you need accommodation when arriving in Thy, let us know in the questionnaire. We will book accommodation for you - we've secured deals at some cozy places for the flat rate of 300kr. (approx. £33 or 40€). We will also arrange transport for you to and from Lærkely on the day and in the night. 
+The setting for this party is at the edge of a forest in the middle of nowhere. We have therefore secured deals with almost all available accommodation within a 5km radius of Lærkely, where a cozy room will cost you 300 kr. (approx. £33 or 40€) per person per night. If you know that you need accommodation when arriving in Thy, let us know in the questionnaire, and we'll reserve rooms on your behalf. We will also arrange transport for you to and from Lærkely on the day and in the night. If you're a bit more of an outdoors-y type, there's also plenty of space for you to pitch up a tent!
 
 ## Presents
-We want no other presents than your presence (Chris wanted to delete this cheesy statement, but Johanne insisted on keeping it). We’re just so happy to have you with us to celebrate. A lot of you are travelling from afar -- be it from India, England, or even Copenhagen!
+We want no other presents than your presence (cheesy, we know, but it's true). We’re just so happy to have you with us to celebrate. A lot of you are travelling from afar -- be it from India, England, or even Copenhagen!
 
 ```{r, echo = FALSE}
 captions_mosaic <- c("Thy, 2021: Believe it or not, we actually didn't pose for this picture",
@@ -159,5 +157,5 @@ pixture::pixgallery(
 Garden Party Formal - think outfits with pastel colours, floral patterns, and summer fabrics. This is an outdoor event, as the main celebrations will be in a tent with heating - so keep in mind to dress according to the weather too. If in doubt, don't hesitate to ask!
 
 ## RSVP
-Please fill out [our questionnaire](https://forms.gle/nMNPGdEiGqooiTTo7) before February 9th, 2025.
+Please fill out [our questionnaire](https://forms.gle/nMNPGdEiGqooiTTo7) as soon as possible and before February 9th, 2025.
 
