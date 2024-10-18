@@ -105,7 +105,7 @@ pixture::pixgallery(
 ## Programme
 
 ```{r, echo = FALSE, fig.align='center', fig.width=20, fig.height=18}
-include_graphics("pics/program_EN.png")
+include_graphics("pics/wedding_invitation_complete_006.png")
 ``` 
 
 ## Location

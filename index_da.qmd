@@ -106,7 +106,7 @@ pixture::pixgallery(
 ## Program
 
 ```{r, echo = FALSE, fig.align='center', fig.width=7, fig.height=9}
-include_graphics("pics/wedding_invitation_EN_DA-2_005.png")
+include_graphics("pics/wedding_invitation_complete_005.png")
 ``` 
 
 ## Sted 
